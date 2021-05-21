@@ -10,7 +10,13 @@ $(function(){
 	$('.dt-button').addClass('btn btn-primary');
 });
 
+$(window).on("load",function(){
+	$(".loaderC").fadeOut('slow');
+	$('footer').css('position', 'absolute');
+	$('.pageContainer').removeAttr('hidden');
+});
 
+$('.forAlert').fadeOut(4000);
 
 $('.addSomething').on('click', function(){
     $('.superForm').attr('action', $(this).attr('data-route'));

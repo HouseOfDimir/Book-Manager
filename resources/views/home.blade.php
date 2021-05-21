@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container mt-1">
     
     <h1 class="d-flex justify-content-center">Acceuil</h1><hr>
 

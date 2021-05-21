@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-3 forAlert">
     @if ($message = Session::get('success'))
         <div class="alert alert-success alert-block row"> 
             <div class="col-md-8">

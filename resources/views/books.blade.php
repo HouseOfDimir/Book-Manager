@@ -3,10 +3,25 @@
 @section('content')
 <!--- TODO RAJOUTER DES ICONES AJOUTER LA MAJ AUTO DU NOMBRE DE MESSAGES EN LIVE TANT QUE CE N4EST PAS OUVERT-->
 @include('partials._message')
-<div class="container">
-    
-    <h1 class="d-flex justify-content-center">Espace Livres</h1><hr>
 
+<div class="container-fluid loaderC">
+    <div class="bookshelf_wrapper">
+        <ul class="books_list">
+          <li class="book_item first"></li>
+          <li class="book_item second"></li>
+          <li class="book_item third"></li>
+          <li class="book_item fourth"></li>
+          <li class="book_item fifth"></li>
+          <li class="book_item sixth"></li>
+        </ul>
+        <div class="shelf"></div>
+        <p class="descrLoader">Chargement des données en cours, veuillez patienter...</p>
+    </div>
+</div>
+
+<div class="container pageContainer" hidden> 
+    <h1 class="d-flex justify-content-center">Espace Livres</h1><hr>
+    
     <div class="row">
         <div>
             <button type="button" class="btn btn-success addSomething" data-route="{{ route('books.createBook') }}" data-toggle="modal" data-target="#createModal">
@@ -51,4 +66,6 @@
     @include('partials._modal', ['data' => 'Livre'])
     @include('partials._modalDelete', ['data' => 'Livre'])
 </div>
+
+@include('partials._footer')
 @endsection

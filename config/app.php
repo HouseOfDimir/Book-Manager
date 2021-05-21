@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'BookManager'),
+    'name' => env('APP_NAME', 'Book-Manager'),
 
     /*
     |--------------------------------------------------------------------------

@@ -3,6 +3,22 @@
 @section('content')
 <!--- TODO RAJOUTER DES ICONES AJOUTER LA MAJ AUTO DU NOMBRE DE MESSAGES EN LIVE TANT QUE CE N4EST PAS OUVERT-->
 @include('partials._message')
+
+<div class="container-fluid loaderC">
+    <div class="bookshelf_wrapper">
+        <ul class="books_list">
+          <li class="book_item first"></li>
+          <li class="book_item second"></li>
+          <li class="book_item third"></li>
+          <li class="book_item fourth"></li>
+          <li class="book_item fifth"></li>
+          <li class="book_item sixth"></li>
+        </ul>
+        <div class="shelf"></div>
+        <p class="descrLoader">Chargement des données en cours, veuillez patienter...</p>
+    </div>
+</div>
+
 <div class="container">
     
     <h1 class="d-flex justify-content-center">Administration Adhérents</h1>
@@ -52,4 +68,6 @@
     @include('partials._modal', ['data' => 'User'])
     @include('partials._modalDelete', ['data' => 'Adhérent'])
 </div>
+
+@include('partials._footer')
 @endsection
